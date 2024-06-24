@@ -1,0 +1,1221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* HERO-SECTION */
+
+/******************************************************************/
+
+/* general container + text + button */
+
+.hero-section {
+    background-image: url("Images/Jack\ Miller.jpeg");
+    min-height: 957px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    overflow: hidden;
+
+    position: relative;
+}
+
+.hero-contact {
+    background-image: url("Images/Qatar.png");
+    min-height: 600px;
+    justify-content: center;
+}
+
+.hero-text-main {
+    font-family: poppins;
+    font-weight: 400;
+    text-wrap: nowrap;
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 70%;
+}
+
+.contact-text-main {
+    transform: translate(-71%, -230%);
+}
+
+.hero-subtext {
+    position: absolute;
+    font-size: medium;
+    top: 73%;
+}
+
+.hero-button {
+    position: absolute;
+    top: 82%;
+    left: 70%;
+    margin-top: 20px;
+    
+    background-color: white;
+    border: none;
+    color: black;
+    font-size:small;
+    font-weight: 400;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    transition: 0.5s;
+}
+
+.hero-button:hover {
+    background-color: #d90042;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+/* navbar */
+
+.navbar {
+    font-family:'poppins';
+    font-weight: normal;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navbar-solid {
+    background-color: #f0f0f0;
+    padding-bottom: 1em;
+}
+
+.navbar:hover {
+    background-color: rgba(255, 255, 255, 0.055);
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    color: rgb(221, 221, 221);
+}
+
+.navbar-solid:hover { 
+    background-color:rgb(230, 230, 230)
+}
+
+.top-nav-container {
+    display: flex;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.bottom-nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.nav-socials-container {
+    display: block;
+    padding-left: 1em;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+}
+
+.contact-item {
+    color: #d90042;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    color:#d90042;
+    transition: 0.4s;
+}
+
+.main-logo-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    transform: translate(-52%);
+}
+
+.main-logo {
+    display: block;
+    width: 110px;
+}
+
+.nav-icons-container {
+    padding-right: 1em;
+}
+
+.profile-icon {
+    width: 20px;
+    padding-right: 10px;
+}
+
+.search-icon {
+    width: 22.5px;
+    padding-right: 10px;
+}
+
+/* BREADCRUMBS */ 
+
+.breadcrumbs {
+    font-family: 'poppins';
+    overflow: hidden !important;
+    gap: 0 !important;
+    justify-content: flex-start !important;
+}
+
+.breadcrumb, .breadcrumbs p {
+    text-align: center;
+    color: rgb(90, 90, 90);
+    padding-right: 50px;
+    margin: 0;
+}
+
+.breadcrumb:hover {
+    color: rgb(155, 155, 155);
+}
+
+/******************************************************************/
+
+/* MAIN-CONTENT */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 0 10em;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.section-divider {
+    display: flex;
+    padding-top: 50px;
+    width: 60%;
+    margin-left: 20%;
+    border-bottom: 1px solid #bdbdbd98;
+}
+
+.section-title {
+    font-family: 'poppins';
+    font-size: large;
+    font-weight: 400;
+    text-wrap: wrap;
+}
+
+.section-subtitle {
+    color: #d90042;
+    font-weight: 300;
+    font-size: medium;
+    padding-top: 40px;
+    height: 15px;
+}
+
+.section-items {
+    font-family: 'poppins';
+    padding-top: 2em;
+}
+
+.section-item {
+    width: 20em;
+    text-align: center;
+}
+
+.section-image {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    height: auto;
+}
+
+.section-image-container h1 {
+    color: #d90042;
+    position: absolute;
+    z-index: 1;
+    padding-left: 4.5em;
+    padding-top: 4.5em;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.section-image-container:hover h1 {
+    opacity: 1;
+}
+
+.section-image-container * {
+    transform: translateY(10px);
+    transition: 0.8s;
+} 
+
+.section-image-container:hover * {
+    transform: translateY(0);
+    opacity: 50%;
+}
+
+.item-title {
+    padding-top: 1em;
+    text-decoration: none;
+    font-family: 'poppins';
+    font-weight: 300;
+    color: black;
+}
+
+.item-price {
+    padding-top: 0;
+}
+
+/* Section banner */ 
+
+.section-banner {
+    background-image: url("Images/Joan\ Mir.png");
+    min-height: 700px;
+    margin-top: 1.5em;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 10% top 40%;
+
+    font-family: 'poppins';
+
+    position: relative;
+}
+
+.section-box {
+    background-color: white;   
+    width: 30%;
+    
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    background-size: 130%;
+    
+    margin-top: -1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+    text-align: center;
+    font-family: 'poppins';
+}
+
+.section-box-title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1em;
+}
+
+.box-text {
+    margin: 0;
+    padding-top: 1em;
+}
+
+/* STORE PAGE */ 
+
+.store-main-content {
+    overflow: hidden;
+    margin-top: 20px;
+    font-family: 'poppins';
+    gap: 0;
+}
+
+.filter-area {
+    min-width: 300px;
+    margin-left: 2em;
+}
+
+.store-item-area {
+    flex: 5;
+}
+
+.filter-row {
+    padding-left: 10px;
+    transition: 0.2s;
+}
+
+.filter-row:hover {
+    background-color: #d90042;
+    color: white;
+    transition: 0.2s;
+}
+
+.filter-heading {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.filter-circle {
+    height: 12px !important;
+    width: 12px !important;
+    border: 1px solid;
+    background-color: white !important;
+    border-color: black !important;
+    margin-right: -150px;
+}
+
+.filter-item {
+    font-weight: 400;
+    font-size: 15px;
+
+    flex-grow: 1;
+    margin: 0;
+}
+
+.filter-divider {
+    padding-top: 20px;
+    margin-bottom: 20px ;
+    margin-left: 32px;
+    width: 82%;
+}
+
+.store-item {
+    width: 13em;
+}
+
+.store-item .section-image-text{
+    transform: translate(-2.8em, -1.2em);
+}
+
+/* PROFILE PAGE */ 
+
+.profile-content {
+    font-family: 'poppins';
+    margin-top: 5em;
+    margin-bottom: 20em;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.profile-sections {    
+    gap: 0;
+}
+
+.profile-order-section {
+    min-width: fit-content;
+}
+
+.address-section {
+    justify-content: left;
+    flex-grow: 0.3;
+    min-width: fit-content;
+}
+
+.button-logout {
+    background-color: white;
+    border: none;
+    padding: 0;
+    font-family: 'poppins';
+
+    justify-content: left;
+    font-weight: 400;
+}
+
+.button-logout:hover {
+    color: rgb(128, 128, 128);
+}
+
+.profile-title {
+    margin-top: 1.5em;
+    justify-content: left;
+}
+
+.profile-subtitle {
+    color: black;
+    padding: 0;
+    margin-top: 0;
+    font-weight: 300;
+    justify-content: left;
+}
+
+#profile-welcome {
+    margin-bottom: 4em;
+}
+
+.profile-divider {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+}
+
+.button-profile {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 20em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    transition: 0.3s;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+
+.button-profile:hover {
+    background-color: rgb(220, 220, 220); 
+    color: black; 
+}
+
+/* ADMIN CONTENT */
+
+.admin-content {
+    font-family: 'poppins';
+    margin-top: 4em;
+}
+
+.admin-logout {
+    width: fit-content;
+    justify-content: left;
+}
+
+.admin-subtitle {
+    font-size: 15px;
+}
+
+.daily-sales-container {
+    background-color: #f0f0f0;
+    margin-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/* PRODUCT CONTENT */
+
+.product-container {
+    margin-top: 10px;
+    align-items: center;
+}
+
+.product-breadcrumbs {
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-left: 10%;
+}
+
+.product-breadcrumb {
+    padding-right: 30px !important;
+    text-align: left;
+}
+
+.product-content {
+    gap: 0;
+    width: 1200px;
+    height: 740px;
+    margin-right: 300px;
+}
+
+.product-image-container {
+    flex-grow: 2;
+    justify-content: center;
+}
+
+.product-image {
+    align-self: center;
+}
+
+.product-info {
+    font-family: 'poppins';
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.product-price {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+}
+
+.product-divider {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    width: 100%;
+}
+
+.product-subtitle {
+    color: black;
+    padding-top: 10px;
+}
+
+.product-details {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.button-quantity {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    border-color: #d3d3d3d5;
+    width: fit-content;
+    margin: 0;
+    width: 9em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button-product {
+    width: 100%;
+}
+
+.similar-content {
+    margin-bottom: 1em;
+}
+
+.similar-title {
+    font-size: 1.2em;
+}
+
+/* CONTACT PAGE */ 
+
+.contact-content {
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: 'poppins';
+}
+
+.contact-title {
+    text-wrap: nowrap;
+}
+
+.contact-text {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contact-email::after {
+    content: 'motogp@fanaticsretailgroup.com';
+    font-weight: 500;
+}
+
+.contact-number::after {
+    content: '+44 (0) 333 331 2149';
+    font-weight: 500;
+}
+
+.contact-form {
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-label {
+    margin-left: 2px;
+    text-wrap: nowrap;
+}
+
+.contact-form-box {
+    margin-bottom: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-right: 80%;
+    padding-bottom: 5px;
+    border-color: #d7d7d7;
+    border-width: 1px;
+}
+
+.contact-form-box:focus {
+    outline: none;
+}
+
+.open-question {
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-left: 10px;
+    padding-right: 400px;
+    margin-top: 10px;
+    border-color: #d7d7d76a #d7d7d7 #d7d7d7 #d7d7d76e;
+    border-width: 1px;
+}
+
+::placeholder {
+    font-family: 'poppins';
+    color: rgba(128, 128, 128, 0.6);
+}
+
+/* ABOUT US */
+
+.about-contents {
+    margin-top: 5em;
+}
+
+.about-hero {
+    gap: 1em;
+}
+
+.about-image-container {
+    margin-right: 10em;
+    align-items: center;
+    justify-content: center;
+}
+
+.last-image-container {
+    margin-right: 0;
+    align-items: start;
+}
+
+.subtext-container {
+    padding-left: 10em;
+    justify-content: center;
+    font-family: 'poppins';
+}
+
+.about-divider {
+    font-family: 'poppins';
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    margin: 3em;
+}
+
+.about-dual-picture {
+    width: fit-content;
+    margin-bottom: 5em;
+    margin-right: 10em;
+}
+
+.about-line {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#last-subtext {
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-left: 0;
+    padding-right: 0;
+    flex-grow: 1.5;
+}
+
+#vintage-bike {
+    z-index: 100;
+    width: 400px;
+}
+
+#vintage-rider {
+    position: absolute;
+    z-index: -1;
+    width: 240px;
+    transform: translate(300px, 20px);
+}
+
+#agostini {
+    width: 400px;
+}
+
+#bagnaia {
+    width: 750px;
+}
+
+/* MISC */ 
+
+.no-spin::-webkit-inner-spin-button, .no-spin::-webkit-outer-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+
+.no-spin {
+    -moz-appearance: textfield !important;
+}
+
+.shop-button {
+    width: 7%;
+    margin-top: 80px;
+    margin-left: 46%;
+    
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    text-wrap: nowrap;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    transition: 0.5s;
+}
+
+.shop-button:hover {
+    background-color: #d90042;
+    transition: 0.5s;
+}
+
+/******************************************************************/
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(220, 220, 220);
+    overflow: hidden;
+    margin-top: 3em;
+}
+
+.footer-contents{
+    padding-top: 10em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    width: 30%;
+}
+
+.icons-social {
+    margin-top: 5%;
+}
+
+.icon-social {
+    width: 30px;
+    padding-right: 0.5em;
+}
+
+.footer-links {
+    gap: 1%;
+    padding-top: 2%;
+    justify-content: left;
+}
+
+.footer-link {
+    font-family: 'poppins';
+    text-decoration: none;
+    color: black;
+}
+
+.circle {
+    align-self: center;
+    height: 5px;
+    width: 5px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.fanatics {
+    width: 225px;
+}
+
+.ducati {
+    width: 112px;
+}
+
+.yamaha {
+    width: 100px;
+}
+
+.footer-logos {
+    margin-top: 1em;
+}
+
+.footer-text {
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: small;
+    justify-content: left;
+}
+
+.footer-logo-container {
+    position: relative;
+}
+
+.motogp-white {
+    position: absolute;
+    width: 150px;
+    left: 91%;
+    transform: translate(-16%, -145%);
+}
+
+.footer-logo-overlay {
+    position: absolute;
+    width: 470px;
+    left: 91%;
+    transform: translate(-30%, -70%);
+    opacity: 20%;
+}
+
+/******************************************************************/
+
+/* MEDIA QUERIES */
+
+/* HOME PAGE (HEADER & FOOTER INCLUSIVE) */
+
+/* HERO SECTION */
+
+@media (max-width: 625px) {
+    .nav-socials-container {
+        display: none;
+    }
+
+    .main-logo {
+        transform: translate(90%);
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-socials-container {
+        max-width: 100px;
+    }
+
+}
+
+@media (max-width: 1069px) {
+    .hero-text-main {
+        left: 32%;
+        top: 50%;
+        padding-top: 1em;
+    }
+
+    .hero-button {
+        left: 32%;
+        top: 60%;
+        padding-top: 1em;
+    }
+
+    .contact-text-main {
+        transform: translate(-34%, 50%);
+    }
+}
+
+@media (max-width: 477px) {
+    .hero-text-main {
+        font-size: 25px;
+        left: 25%;
+    }
+    
+    .contact-text-main {
+        transform: translate(-25%, 50%);
+    }
+
+    .hero-subtext {
+        font-size: small;
+        top: 50%;
+    }
+
+    .hero-button {
+        left: 25%;
+    }
+}
+
+/* BOX SECTION */
+
+@media (max-width: 1150px) {
+    .section-box, .section-box-title {
+        font-size: small;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-box, .section-box-title {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 370px) {
+    .section-box, .section-box-title {
+        font-size: 9px;
+    }
+}
+
+/* FOOTER */
+
+@media (max-width: 1500px) {
+    .motogp-white, .footer-logo-overlay {
+        left: 85%;
+    }
+}
+
+@media (max-width: 900px) {
+    .motogp-white, .footer-logo-overlay {
+        left: 75%;
+    }
+
+    .icons-social {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 900px) {
+    .motogp-white {
+        width: 120px;
+        left: 70%;
+    }
+
+    .icons-social {
+        margin-top: 25%;
+    }
+}
+
+/* STORE PAGE */
+
+@media (max-width: 540px) {
+    .breadcrumbs {
+        max-width: fit-content;
+        margin-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px
+    }
+}
+
+/* PROFILE SECTION */
+
+@media (max-width: 1000px) {
+    .profile-order-section {
+        text-wrap: nowrap;
+    }
+
+    .address-section {
+        text-wrap: nowrap;
+        margin-top: 2em;
+        flex: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile-headings {
+        transform: translate(-4em);
+    }
+}
+
+
+@media (max-width: 435px) {
+    .profile-subtitle {
+        text-wrap: nowrap;
+    }
+}
+
+@media (max-width: 400px) {
+    .profile-headings {
+        transform: translate(-7em);
+    }
+}
+
+/* PRODUCT PAGE */
+
+@media (max-width: 1320px) {
+    .product-breadcrumbs {
+        margin-left: 330px;
+        order: 2;
+    }
+    
+    .product-container {
+        overflow: hidden;
+    }
+
+    .product-image-container {
+        order: 1;
+        min-width: 100%;
+        margin-top: 3em;
+        margin-left: 20em;
+    }
+
+    .product-info {
+        order: 3;
+        align-items: left;
+        margin-left: 30em;
+        margin-right: 10em;
+    }
+
+    .product-divider {
+        order: 4;
+        margin-top: 30em;
+    }
+
+    .similar-content {
+        order: 5;
+        margin-top: 5em;
+    }
+}
+
+@media (max-width: 610px) {
+    .product-content {
+        max-width: 300px;
+    }
+
+    .product-info {
+        min-width: 300px;
+    }
+
+    .product-breadcrumbs {
+        min-width: 300px;
+        margin-left: 300px;
+    }
+
+    .product-divider {
+        margin-top: 40em;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-image {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 445px) {
+    .product-content {
+        max-width: 200px;
+    }
+
+    .product-info {
+        min-width: 200px;
+    }
+}
+
+/* CONTACT PAGE */ 
+
+@media (max-width: 1475px) {
+    .open-question {
+        padding-right: 200px;
+    }
+}
+
+@media (max-width: 965px) {
+    .open-question {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 715px ) {
+    .open-question {
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-content {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .contact-text {
+        font-size: 12px;
+    }
+
+    .form-label {
+        font-size: 12px;
+    }
+}
+
+/* ABOUT PAGE */ 
+
+@media (max-width: 1400px) {
+
+}
+
+
+@media (max-width: 1081px) {
+    #bagnaia {
+        width: 500px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .subtext-container {
+        flex-basis: 30%;
+        padding-right: 10em;
+        text-align: center;
+    }
+
+    .about-image-container {
+        margin: 0;
+        align-items: center;
+    }
+
+    .about-dual-picture {
+        margin-left: 7em;
+    }
+
+    .about-contents {
+        overflow: hidden;
+    }
+
+    #vintage-bike {
+        width: 300px;
+        transform: translate(-40px);
+    }
+    
+    #vintage-rider {
+        width: 180px;
+        padding-top: 1em;
+        transform: translate(190px);
+    }    
+
+    #agostini {
+        width: 300px;
+    }
+
+    .about-divider {
+        margin: 2em;
+    }
+
+    .last-hero {
+        margin-top: 4em;
+    }
+}
+
+@media (max-width: 635px) {
+    .subtext-container {
+        font-size: 12px;
+    }
+
+    #vintage-bike {
+        width: 200px;
+        transform: translate(-10px);
+    }
+        
+    #vintage-rider {
+        width: 110px;
+        transform: translate(130px);
+    } 
+
+    #agostini {
+        width: 200px;
+    }
+
+    #bagnaia {
+        width: 350px;
+    }
+
+    .about-divider {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 445px) {
+    .subtext-container {
+        font-size: 9px;
+    }
+
+    .about-divider {
+        font-size: 15px;
+    }
+
+    #bagnaia {
+        width: 250px;
+    }
+
+}
