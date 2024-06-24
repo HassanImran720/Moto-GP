@@ -23,7 +23,7 @@ button:hover {
 
 .hero-section {
     background-image: url("Images/Jack\ Miller.jpeg");
-    min-height: 957px;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     
